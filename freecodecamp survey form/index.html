@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FreeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-heading">
+        <h1 id="title">Nigerian Music Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <section id="form-section" >
+        <form id="survey-form" action="">
+          <div >
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name" required
+            >
+          </div>
+          <div >
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email" required
+            >
+          </div>
+          <div >
+            <label for="age">Age(Optional)</label>
+            <input type="number" id="age" name="age" min="5" max="90" required >
+          </div>
+          <div >
+            <label for="role"
+              >Which option best describes your current role?
+            </label>
+            <select name="role" id="dropdown" value="0">
+              <option value="0">Select Current role</option>
+              <option value="student">student</option>
+              <option value="Full time job">Full time job</option>
+              <option value="Full time learner">Internship</option>
+              <option value="prefer not to say">prefer not to say</option>
+              <option value="other">other</option>
+            </select>
+          </div>
+          <div >
+            <label for="best"
+              >Which Nigerian musician do you like the most?
+            </label>
+            <input
+              type="radio"
+              name="best"
+              value="1"
+            > Wizkid</input><br>
+            
+            <input
+              type="radio"
+              name="best"
+              value="2"
+            > Davido</input><br>
+            <input
+              type="radio"
+              name="best"
+              value="3"
+            > Burna Boy</input><br>
+            <input
+              type="radio"
+              name="best"
+              value="4"
+            > 2 Face</input><br>
+            <input
+              type="radio"
+              name="best"
+              value="5"
+            > Kizz Daniel</input><br>
+            
+          <div >
+            <label for="dropdown"
+              >What album is your favorite in 2019?
+            </label>
+            <select name="album" id="dropdown" value="0">
+              <option value="0">Select an option</option>
+              <option value="African-Giant">African-Giant</option>
+              <option value="LTG">LTG</option>
+              <option value="A good time">A good time</option>
+              <option value="Boo of the booless">Boo of the booless</option>
+        
+            </select>
+          </div>
+          <div>
+            <label>What are your best tracks of 2019? (Check all that apply)</label>
+            <input type="checkbox"  name="track" value="1"> Mafo</input><br>
+            <input type="checkbox"  name="track" value="2"> Anybody</input><br>
+            <input type="checkbox"  name="track" value="3"> Scatter</input><br>
+            <input type="checkbox"  name="track" value="4"> Baby</input><br>
+            <input type="checkbox"  name="track" value="5"> Killin Dem</input><br>
+            <input type="checkbox"  name="track" value="6"> Jam<br>
+            <input type="checkbox"  name="track" value="7"> Opotoyi</input><br>
+            
+          </div>
+          <div >
+            <label for="message">Any Comments or Suggestions?</label>
+            <textarea placeholder="Enter your comments here..." name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <input id="submit" type="submit"></input>
+          </div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
